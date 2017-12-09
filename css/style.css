@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+#heading {
+  font-family: "Bungee";
+  font-size: 70px;
+  margin: 0 0 40px 0;
+}
+
+.row {
+  text-align: center;
+}
+
+.col-sm-12 {
+  text-align: center;
+  justify-content: center;
+  padding: 50px 0 0 0;
+}
+
+.button {
+  height: 200px;
+  width: 200px;
+  background: white;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: border-width 0.1s linear;
+}
+
+.endEmph {
+  font-family: "Luckiest Guy";
+  font-size: 70px;
+}
+
+.mash {
+  background: white !important;
+  border: 8px solid black !important;
+  transition: border-width 0.1s linear;
+}
+
+#start, #strict {
+  margin: 0 0 21px 0;
+}
+
+#restart {
+  margin: 5% 0 0 0;
+}
+
+#score {
+  width: 220px;
+  font-size: 46px;
+  padding: 0 0 0 190px;
+  display: inline-block;
+}
+
+#board {
+  padding: 200px 0;
+  border-radius: 50%;
+  top: 8%;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 600px;
+  width: 600px;
+  background: transparent;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+#green {
+  background: limegreen;
+}
+
+#red {
+  background: red;
+}
+
+#yellow {
+  background: yellow;
+}
+
+#blue {
+  background: blue;
+}
+
+#endModalBG {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  z-index: 2;
+}
+
+#endModalContent {
+  margin: 100px auto;
+  width: 600px;
+  height:280px;
+  padding: 30px;
+  border: 1px solid #FFF;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
